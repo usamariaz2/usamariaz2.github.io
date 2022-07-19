@@ -1,0 +1,119 @@
+.calendar {
+    width: 800px;
+    border: 2px solid #f1f1f1;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.tab div {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.tab div:hover {
+    background-color: #ddd;
+}
+
+.tab div.active {
+    background-color: #ccc;
+}
+
+#content {
+    display: block;
+    padding: 6px 12px;
+    border-top: none;
+    position: relative;
+}
+
+.content-item {
+    width: 100%;
+    padding: 15px 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item>div{
+    text-align: center;
+}
+
+.content-item-image {
+    width:15%;
+}
+
+.content-item-name {
+    width:15%;
+}
+
+.content-item-desctiption {
+    width:40%;
+}
+
+.content-item-start-date {
+    width:15%;
+}
+
+.content-item-end-date {
+    width:15%;
+}
+
+.content-item-image img {
+    width: 100%;
+}
+
+#tab-content-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#tab-content-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-content-loader div {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #ccc;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.list-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+#ico-list {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#ico-list::-webkit-scrollbar { width: 0; }
